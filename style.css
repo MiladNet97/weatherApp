@@ -4,12 +4,26 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/Roboto-Regular.ttf') format('truetype'),
+    url('fonts/Roboto-Medium.ttf') format('truetype'),
+    url('fonts/Roboto-MediumItalic.ttf') format('truetype'),
+    url('fonts/Roboto-Italic.ttf') format('truetype'),
+    url('fonts/Roboto-Bold.ttf') format('truetype'),
+    url('fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   min-height: 100vh;
   width: 100%;
   background: #667db6;
   background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
   background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
+  font-family: Roboto;
+  color: #FAFAFA;
 }
 
 .container {
@@ -17,10 +31,46 @@ body {
   height: 100vh;
   padding: 1.2rem 1.5rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .title__app {
   font-size: 2.5em;
-  color: #FAFAFA;
+  letter-spacing: 0.1em;
+}
+
+.temperature__box {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.temperature__data {
+  font-size: 3.5em;
+}
+
+.temperature__unit {
+  font-size: 1.5em;
+}
+
+.weather__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.weather__icon {
+  width: 200px;
+  height: 200px;
+}
+
+.weather__detail--item {
+  padding: 5px 10px;
+  font-size: 1.2em;
 }

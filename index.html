@@ -12,12 +12,27 @@
 </head>
 
 <body>
+
   <div class="container">
     <h2 class="title__app">Weather App</h2>
-
-
-
-  </div>
+    <div class="weather__box">
+      <div class="temperature__box">
+        <h3 class="temperature__data">0</h3>
+        <div class="temperature__unit">
+          <span>°C</span>
+          <span>|</span>
+          <span>°F</span>
+        </div> <!-- end temperature__unit -->
+      </div> <!-- end temperature__box -->
+      <img src="icons/day.svg" alt="weather" class="weather__icon">
+      <div class="weather__detail">
+        <div class="weather__detail--item">Country: <span class="weather__country">-</span></div>
+        <div class="weather__detail--item">City: <span class="weather__city">-</span></div>
+        <div class="weather__detail--item">Humidity: <span class="weather__humidity">-</span></div>
+        <div class="weather__detail--item">Wind speed: <span class="weather__speed">-</span></div>
+      </div> <!-- end weather__detail -->
+    </div> <!-- end weather__box -->
+  </div> <!-- end container -->
   <script src="app.js"></script>
 </body>
 
