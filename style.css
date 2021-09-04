@@ -67,6 +67,7 @@ body {
   font-size: 2em;
   font-weight: 500;
   padding-bottom: 7px;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 70%);
 }
 
 .temperature__detail {
@@ -84,6 +85,13 @@ body {
   font-size: 1.5em;
 }
 
+.temperature__cel.disable,
+.temperature__far.disable {
+  color: #E0E0E0;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
 .weather__box-bottom {
   display: flex;
   align-items: center;
@@ -97,4 +105,25 @@ body {
 .weather__detail--item {
   padding: 5px 10px;
   font-size: 1.2em;
+}
+
+.weather__detail--item span {
+  text-shadow: unset;
+  font-size: 18px;
+  color: #CFD8DC;
+}
+
+@media screen and (max-width:375px) {
+  .temperature__description {
+    font-size: 1.7em;
+  }
+
+  .weather__box-bottom {
+    flex-direction: column;
+  }
+
+  .weather__icon {
+    width: 130px;
+    height: 130px;
+  }
 }
