@@ -113,7 +113,7 @@ body {
   color: #CFD8DC;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:576px) {
   .temperature__description {
     font-size: 1.7em;
   }
