@@ -61,6 +61,9 @@ const getIcon = weMain => {
     case 'Atmosphere':
       icon = `${weMain}.png`;
       break;
+    case 'Mist':
+      icon = `${weMain}.svg`;
+      break;
   }
   return icon;
 }
